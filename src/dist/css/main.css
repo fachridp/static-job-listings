@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*,
+*::before,
+*::after {
+ box-sizing: border-box;
+ margin: 0;
+ padding: 0;
+}
+
+body {
+ font-family: 'League Spartan', sans-serif;
+ background-color: hsl(180, 52%, 96%);
+}
+
+@layer utilities {
+ .max-wrapper {
+  max-width: 1440px;
+  margin: 0 auto;
+ }
+
+ .shadow-filter-box {
+  box-shadow: 6px 10px 34px -11px rgba(174, 245, 245, 0.62);
+ }
+}
